@@ -6,7 +6,17 @@ function Queue(){
     this.enqueue=function(val){
         return collection.push(val)
     }
+    this.front=function(){
+        return collection[0]
+    }
+    this.isEmpty=function(){
+        return collection.length===0
+    }
 }
 const newQ=new Queue()
 newQ.enqueue("Helal Uddin")
+newQ.enqueue("Helal Uddin2")
+newQ.enqueue("Helal Uddin3")
+console.log(newQ.front())
+console.log(newQ.isEmpty())
 newQ.print()
